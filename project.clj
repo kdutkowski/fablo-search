@@ -10,7 +10,8 @@
                  [org.clojure/clojurescript "1.9.89"]
                  [rum "0.10.5"]
                  [org.clojure/core.async "0.2.385"
-                  :exclusions [org.clojure/tools.reader]]]
+                  :exclusions [org.clojure/tools.reader]]
+                 [cljs-http "0.1.41"]]
 
   :plugins [[lein-figwheel "0.5.4-7"]
             [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]]
