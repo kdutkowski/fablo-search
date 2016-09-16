@@ -32,11 +32,11 @@
               } button-text])
   )
 
-(rum/defcs search-box < (rum/local "" ::key)
+(rum/defcs search-box < (rum/local "" ::query-text)
   [state *results-list button-text]
-  (let [local-atom (::key state)]
-  [:div (query-input local-atom)
-    (search-button local-atom *results-list button-text)]
+  (let [local-query-text (::query-text state)]
+  [:div (query-input local-query-text)
+    (search-button local-query-text *results-list button-text)]
     ))
 
 (rum/defc list-item < rum/static [item]
